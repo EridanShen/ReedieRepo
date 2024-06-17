@@ -32,11 +32,9 @@ def circle_length_and_area(R):
 def arithmetic_mean(a, b):
     return (a + b) / 2
 
-# Даны два неотрицательных числа a и b. Найти их среднее геометрическое, т. е. квадратный корень из их произведения: (a·b)^1/2
 def geometric_mean(a, b):
     return math.sqrt(a * b)
 
-# Даны два ненулевых числа. Найти сумму, разность, произведение и частное их квадратов.
 def sum_difference_product_quotient_of_squares(a, b):
     sum_ab = a + b
     difference_ab = a - b
@@ -56,7 +54,7 @@ print("Площадь квадрата", square_area(a))
 print("Площадь и периметр прямоугольника", rectangle_area_and_perimeter(a, b))
 print("Длина окружности", circle_length(d))
 print("Объем и площадь поверхности куба", cube_volume_and_surface_area(a))
-print("Объем и площадь поверхности прямоугольного параллелепипеда", rectangular_parallelepiped_volume_and_surface_area(a, b, c))
+print("Объем и площадь поверхности параллелепипеда", rectangular_parallelepiped_volume_and_surface_area(a, b, c))
 print("Длина окружности и площадь круга", circle_length_and_area(R))
 print("Среднее арифметическое:", arithmetic_mean(a, b))
 print("Среднее геометрическое", geometric_mean(a, b))
