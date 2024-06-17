@@ -15,8 +15,8 @@ def rectangle_area_and_perimeter(a, b):
     return area, perimeter
 
 # Дан диаметр окружности d. Найти её длину L = π·d, π = 3.14
-def circle_length(d, pi=3.14):
-    return pi * d
+def circle_length(d):
+    return math.pi * d
 
 # Дана длина ребра куба a. Найти объем куба V = a^3 и площадь его поверхности S = 6·a^2
 def cube_volume_and_surface_area(a):
