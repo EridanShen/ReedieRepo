@@ -5,7 +5,7 @@ print("Срез из первых трех элементов:", list1[:3])
 
 city_list = ["Ростов", "+", "на", "-", "Дону"]
 city_list[1] = "-"
-city_name = city_list[0] + city_list[1] + city_list[2] + city_list[3] + city_list[4]
+city_name = city_list[0] + city_list[3] + city_list[2] + city_list[3] + city_list[4]
 print("Название города:", city_name)
 
 mixed_list = ["a", "s", "1", "a", "32", "23"]
