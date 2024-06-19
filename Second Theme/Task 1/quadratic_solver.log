@@ -1,0 +1,6 @@
+2024-06-19 18:46:53,533 Initializing quadratic equation solving process with a=5.0, b=7.0, c=4.0
+2024-06-19 18:46:53,533 Failed to solve quadratic equation: Дискриминант отрицательный, нет корней.
+2024-06-19 18:47:05,524 Initializing quadratic equation solving process with a=48.0, b=14.0, c=2.0
+2024-06-19 18:47:05,524 Failed to solve quadratic equation: Дискриминант отрицательный, нет корней.
+2024-06-19 18:48:17,223 Initializing quadratic equation solving process with a=-4.0, b=28.0, c=49.0
+2024-06-19 18:48:17,223 Successfully solved: roots are -1.4497474683058327 and 8.449747468305834

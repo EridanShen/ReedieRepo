@@ -1,0 +1,8 @@
+2024-06-19 18:55:01,940 Trying to generate random number in range 4 to 867
+2024-06-19 18:55:01,940 Successfully generated number: 754
+2024-06-19 18:55:14,890 Trying to generate random number in range -1 to 77
+2024-06-19 18:55:14,890 Failed to generate random number: Invalid range. Start and end must be non-negative and start must be less than or equal to end.
+2024-06-19 18:55:23,692 Trying to generate random number in range 0 to 999
+2024-06-19 18:55:23,693 Successfully generated number: 814
+2024-06-19 18:55:37,641 Trying to generate random number in range 67 to 20
+2024-06-19 18:55:37,641 Failed to generate random number: Invalid range. Start and end must be non-negative and start must be less than or equal to end.
