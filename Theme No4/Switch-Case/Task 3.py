@@ -1,26 +1,18 @@
-day = int(input("Введите день: "))
-month = int(input("Введите месяц: "))
+def следующая_дата():
+    D = int(input("Введите день (1-31): "))
+    M = int(input("Введите месяц (1-12): "))
+    дни_в_месяце = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-days_in_month = {
-    1: 31,
-    2: 28,
-    3: 31,
-    4: 30,
-    5: 31,
-    6: 30,
-    7: 31,
-    8: 31,
-    9: 30,
-    10: 31,
-    11: 30,
-    12: 31
-}
+    if 1 <= M <= 12 and 1 <= D <= дни_в_месяце[M - 1]:
+        D += 1
+        if D > дни_в_месяце[M - 1]:
+            D = 1
+            M += 1
+            if M > 12:
+                M = 1
+        print(f"Следующая дата: {D}.{M}")
+    else:
+        print("ошибка")
 
-if day < days_in_month[month]:
-    next_day = day + 1
-    next_month = month
-else:
-    next_day = 1
-    next_month = month + 1 if month < 12 else 1
+следующая_дата()
 
-print("Следующая дата: {}.{}".format(next_day, next_month))

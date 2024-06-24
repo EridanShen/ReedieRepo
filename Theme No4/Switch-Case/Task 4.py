@@ -1,16 +1,23 @@
-initial_direction = input("Введите исходное направление (С, З, Ю, В): ").upper()
-command = int(input("Введите команду (0, 1, -1): "))
+def направление_робота():
+    C = input("Введите исходное направление (С, З, Ю, В): ").upper()
+    N = int(input("Введите команду (0, 1, -1): "))
+    направления = ["С", "В", "Ю", "З"]
 
-directions = ["С", "В", "Ю", "З"]
-index = directions.index(initial_direction)
+    if C in направления:
+        index = направления.index(C)
+        match N:
+            case 0:
+                pass  # Направление не меняется
+            case 1:
+                index = (index - 1) % 4
+            case -1:
+                index = (index + 1) % 4
+            case _:
+                print("ошибка команды")
+                return
+        print(f"Новое направление: {направления[index]}")
+    else:
+        print("ошибка направления")
 
-if command == 0:
-    new_direction = directions[index]
-elif command == 1:
-    new_direction = directions[index - 1]
-elif command == -1:
-    new_direction = directions[(index + 1) % 4]
-else:
-    new_direction = "ошибка"
+направление_робота()
 
-print("Новое направление:", new_direction)
