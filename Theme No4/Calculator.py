@@ -1,19 +1,23 @@
-first_number = float(input("Введите первое число: "))
-second_number = float(input("Введите второе число: "))
-operation = input("Введите операцию (*, /, +, -): ")
+def calculator(num1, num2, operation):
+    match operation:
+        case '+':
+            return num1 + num2
+        case '-':
+            return num1 - num2
+        case '*':
+            return num1 * num2
+        case '/':
+            if num2 != 0:
+                return num1 / num2
+            else:
+                return "Error: Division by zero"
+        case _:
+            return "Error: Invalid operation"
 
-if operation == "+":
-    result = first_number + second_number
-elif operation == "-":
-    result = first_number - second_number
-elif operation == "*":
-    result = first_number * second_number
-elif operation == "/":
-    if second_number != 0:
-        result = first_number / second_number
-    else:
-        result = "Ошибка: деление на ноль"
-else:
-    result = "Ошибка: неверная операция"
+# Пример использования
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+operation = input("Введите операцию (+, -, *, /): ")
 
-print("Результат:", result)
+result = calculator(num1, num2, operation)
+print(f"Результат: {result}")
